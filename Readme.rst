@@ -40,12 +40,13 @@ Settings
 You need to provide the following information in your Pelican configuration file
 for this plugin to communicate with the Google Analytics API.
 
-- ``GOOGLE_SERVICE_ACCOUNT``: the service email.
+- ``GOOGLE_SERVICE_ACCOUNT``: Google API service email ``<prioject_id>-<unique_id>@developer.gserviceaccount.com``
 - ``GOOGLE_KEY_FILE``: path to the private key file, E.g.
   ``./client_private.p12``.
-- ``GA_START_DATE``: start date to count page view. E.g., ``2005-01-01``.
-- ``GA_END_DATE``: end date to count page view. E.g., ``today``.
-- ``GA_METRIC``: counting metrics, default is ``ga:pageview``. See other options
+- ``GA_START_DATE``: start date to count page view. default: ``2005-01-01``.
+- ``GA_END_DATE``: end date to count page view. default: ``today``.
+- ``GA_METRIC``: counting metrics, default: ``ga:pageviews``.
+See other options
   `here
   <https://developers.google.com/analytics/devguides/reporting/core/dimsmets>`_.
   Right now we only support query with ONE metric.
