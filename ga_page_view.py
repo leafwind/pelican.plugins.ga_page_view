@@ -109,6 +109,7 @@ def get_page_view(generators):
     for page in pages:
       url = '/%s' % (url_pattern.format(**page.__dict__))
       pv = page_view.get(url, 0)
+      print url + ": " + str(pv)
       setattr(page, 'pageview', pv)
       total_page_view += pv
 
